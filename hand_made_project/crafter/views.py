@@ -20,10 +20,38 @@ class CrafterAPIView(APIView):
     def post(self, request):
         serializer = CrafterSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
+        serializer.save()
 
-        crafter_new = CrafterPerson.objects.create(
-            name=request.data['name'],
-            phone_number=request.data['phone_number'],
-            category_id=request.data['category_id']
-        )
-        return Response({'crafter': CrafterSerializer(crafter_new).data})
+        return Response({'crafter': serializer.data})
+
+    def put(self, request, *args, **kwargs):
+        pk = kwargs.get('pk', None)
+        if not pk:
+            return Response({'error': 'Method PUT not allowed'})
+
+        try:
+            instance = CrafterPerson.objects.get(pk=pk)
+        except:
+            return Response({'error': 'Object does not exist'})
+
+        serializer = CrafterSerializer(data=request.data, instance=instance)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+
+        return Response({'crafter': serializer.data})
+
+    def delete(self, request, *args, **kwargs):
+        pk = kwargs.get('pk', None)
+        if not pk:
+            return Response({'error': 'Method DELETE not allowed'})
+
+        try:
+            instance = CrafterPerson.objects.get(pk=pk)
+        except:
+            return Response({'error': 'Object does not exist'})
+
+        instance.delete()
+
+        return Response({'crafter': f'{instance.name} has been removed'})
+
+
