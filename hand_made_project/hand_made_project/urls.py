@@ -21,5 +21,6 @@ from crafter.views import CrafterAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/crafter_list', CrafterAPIView.as_view())
+    path('api/v1/crafter_list', CrafterAPIView.as_view()),
+    path('api/v1/crafter_list/<int:pk>', CrafterAPIView.as_view())
 ]
