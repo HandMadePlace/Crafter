@@ -15,12 +15,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from rest_framework import routers
 
-from crafter.views import CrafterAPIView
+from crafter.views import CrafterPersonViewSet
+
+
+router = routers.SimpleRouter()
+router.register(r'crafter', CrafterPersonViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/crafter_list', CrafterAPIView.as_view()),
-    path('api/v1/crafter_list/<int:pk>', CrafterAPIView.as_view())
+    path('api/v1/', include(router.urls)),
 ]
