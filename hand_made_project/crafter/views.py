@@ -12,6 +12,7 @@ from .serializers import CrafterSerializer
 class CrafterPersonViewSet(viewsets.ModelViewSet):
     queryset = CrafterPerson.objects.all()
     serializer_class = CrafterSerializer
+    permission_classes = (IsAuthenticatedOrReadOnly,)
 
     @action(methods=['get'], detail=True)
     def category(self, request, pk=None) -> Response:
