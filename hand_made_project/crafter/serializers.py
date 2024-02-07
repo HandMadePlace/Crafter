@@ -5,6 +5,8 @@ from .models import CrafterPerson
 
 
 class CrafterSerializer(serializers.ModelSerializer):
+    user = serializers.HiddenField(default=serializers.CurrentUserDefault())
+    
     class Meta:
         model = CrafterPerson
         fields = '__all__'
