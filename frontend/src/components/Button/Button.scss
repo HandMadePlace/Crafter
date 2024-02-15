@@ -1,0 +1,108 @@
+@import '../../styles/main.scss';
+.button {
+  padding: 10px 38px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+  font-size: 18px;
+  font-family: Arsenal, sans-serif;
+  font-weight: 400;
+  border-radius: 4px;
+  text-transform: uppercase;
+  &.text {
+    padding: 8px;
+    background: transparent;
+    text-transform: uppercase;
+
+    &.white {
+      color: $ivory;
+      &:hover {
+        color: $mainBlue;
+      }
+    }
+    &.black {
+      color: $textBlack;
+      &:hover {
+        color: $mainBlue;
+      }
+    }
+  }
+  &.contained {
+    &.orange {
+      background: $mainOrange;
+      border-color: $mainOrange;
+      &:hover {
+        background: #d68600;
+        border-color: #d68600;
+      }
+      &:disabled {
+        background: #ffd38a;
+        border-color: #ffd38a;
+        cursor: not-allowed;
+      }
+    }
+    &.blue {
+      background: $mainBlue;
+      border-color: $mainBlue;
+
+      &:hover {
+        background: $btnBlue;
+        border-color: $btnBlue;
+      }
+      &:disabled {
+        background: #bacffa;
+        border-color: #bacffa;
+        cursor: not-allowed;
+      }
+    }
+    &.grey {
+      background: $btnDarkgrey;
+      border-color: $btnDarkgrey;
+      &:hover {
+        background: $btnLightgrey;
+        border-color: $btnLightgrey;
+      }
+      &:disabled {
+        background: #e6e6dd;
+        border-color: #e6e6dd;
+        cursor: not-allowed;
+      }
+    }
+    &.lightBlue {
+      background: #bacffa;
+      border-color: #bacffa;
+      border-radius: 8px;
+      font-size: 32px;
+      text-transform: capitalize;
+      &:hover {
+        background: #dde8fc;
+        border-color: #dde8fc;
+      }
+    }
+    &.white {
+      color: $ivory;
+    }
+    &.black {
+      color: $textBlack;
+    }
+  }
+  &.outlined {
+    border-color: $btnBlue;
+    & svg {
+      fill: $mainBlue;
+    }
+    &:hover {
+      border-color: $mainOrange;
+      & svg {
+        fill: $textBlack;
+      }
+    }
+  }
+  &.small {
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  &.large {
+    font-size: 24px;
+  }
+}

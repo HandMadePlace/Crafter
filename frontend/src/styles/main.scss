@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Kyiv Type Titling';
+  src: url('../fonts/KyivTypeTitling-VarGX.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
+
+$mainBlue: #1f65ee;
+$mainOrange: #ff9f00;
+$textBlack: #1c1a10;
+$textDarkBlue: #001744;
+$red: #e04b32;
+$lightRed: #e04b32;
+$btnBlue: #023baa;
+$btnDarkgrey: #a8a89a;
+$btnLightgrey: #d1d1c6;
+$lightGrey: #cdcdd0;
+$ivory: #fafaf5;
+$white: #ffffff;
+$gradient: liner-gradient(#ff9f00a8 66%, #a08665a8 66%, #1f65eea8 66%);
+$gradient2: linear-gradient(
+  178deg,
+  #ff9f00 0%,
+  #a08665 42.5%,
+  #1f65ee 100%
+); // тут питання по градієнту
