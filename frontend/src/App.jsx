@@ -1,18 +1,11 @@
 import './App.css';
-import Button from './components/Button/Button';
+
+import Promo from './components/Promo/Promo';
 
 function App() {
   return (
     <div>
-      <Button name="Клієнтам" variant="text" textColor="black"></Button>
-      <Button
-        name="Додати оголошення"
-        variant="contained"
-        textColor="black"
-        textSize="large"
-        color="orange"
-        disabled
-      ></Button>
+      <Promo />
     </div>
   );
 }

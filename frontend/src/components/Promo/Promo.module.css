@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap");
+@font-face {
+  font-family: "Kyiv Type Titling";
+  src: url("../fonts/KyivTypeTitling-VarGX.ttf") format("truetype");
+}
+.container {
+  width: 100%;
+}
+
+.white {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.logoName {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.promoText {
+  color: #001744;
+  font-size: 28px;
+  font-style: normal;
+  font-family: "Kyiv*Type Serif", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.gradient {
+  background: linear-gradient(178deg, rgba(255, 159, 0, 0.66) 0%, rgba(160, 134, 101, 0.66) 42.5%, rgba(31, 101, 238, 0.66) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 86px;
+  padding: 55px;
+}
+
+.button {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=Promo.module.css.map */

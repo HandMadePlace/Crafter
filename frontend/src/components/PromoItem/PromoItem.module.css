@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap");
+@font-face {
+  font-family: "Kyiv Type Titling";
+  src: url("../fonts/KyivTypeTitling-VarGX.ttf") format("truetype");
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image {
+  width: 199px;
+  height: 171px;
+  align-self: center;
+}
+
+.label {
+  color: #1c1a10;
+  font-size: 18px;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+}/*# sourceMappingURL=PromoItem.module.css.map */

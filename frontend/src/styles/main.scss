@@ -16,10 +16,9 @@ $btnLightgrey: #d1d1c6;
 $lightGrey: #cdcdd0;
 $ivory: #fafaf5;
 $white: #ffffff;
-$gradient: liner-gradient(#ff9f00a8 66%, #a08665a8 66%, #1f65eea8 66%);
-$gradient2: linear-gradient(
+$gradient: linear-gradient(
   178deg,
-  #ff9f00 0%,
-  #a08665 42.5%,
-  #1f65ee 100%
+  rgba(255, 159, 0, 0.66) 0%,
+  rgba(160, 134, 101, 0.66) 42.5%,
+  rgba(31, 101, 238, 0.66) 100%
 ); // тут питання по градієнту

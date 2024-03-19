@@ -26,7 +26,6 @@ const Button = (props) => {
     large: textSize === 'large',
     white: textColor === 'white',
     black: textColor === 'black',
-    
   });
   return (
     <button className={buttonClasses} onClick={onClick} disabled={disabled}>

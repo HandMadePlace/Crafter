@@ -1,0 +1,19 @@
+@import '../../styles/main.scss';
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.image {
+  width: 199px;
+  height: 171px;
+  align-self: center;
+}
+.label {
+  color: $textBlack;
+  font-size: 18px;
+  font-family: 'Arsenal', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+}

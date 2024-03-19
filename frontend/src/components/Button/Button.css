@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap");
+@font-face {
+  font-family: "Kyiv Type Titling";
+  src: url("../fonts/KyivTypeTitling-VarGX.ttf") format("truetype");
+}
+.button {
+  padding: 10px 38px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+  font-size: 18px;
+  font-family: Arsenal, sans-serif;
+  font-weight: 400;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.button.text {
+  padding: 8px;
+  background: transparent;
+  text-transform: uppercase;
+}
+.button.text.white {
+  color: #fafaf5;
+}
+.button.text.white:hover {
+  color: #1f65ee;
+}
+.button.text.black {
+  color: #1c1a10;
+}
+.button.text.black:hover {
+  color: #1f65ee;
+}
+.button.contained.orange {
+  background: #ff9f00;
+  border-color: #ff9f00;
+}
+.button.contained.orange:hover {
+  background: #d68600;
+  border-color: #d68600;
+}
+.button.contained.orange:disabled {
+  background: #ffd38a;
+  border-color: #ffd38a;
+  cursor: not-allowed;
+}
+.button.contained.blue {
+  background: #1f65ee;
+  border-color: #1f65ee;
+}
+.button.contained.blue:hover {
+  background: #023baa;
+  border-color: #023baa;
+}
+.button.contained.blue:disabled {
+  background: #bacffa;
+  border-color: #bacffa;
+  cursor: not-allowed;
+}
+.button.contained.grey {
+  background: #a8a89a;
+  border-color: #a8a89a;
+}
+.button.contained.grey:hover {
+  background: #d1d1c6;
+  border-color: #d1d1c6;
+}
+.button.contained.grey:disabled {
+  background: #e6e6dd;
+  border-color: #e6e6dd;
+  cursor: not-allowed;
+}
+.button.contained.lightBlue {
+  background: #bacffa;
+  border-color: #bacffa;
+  border-radius: 8px;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.button.contained.lightBlue:hover {
+  background: #dde8fc;
+  border-color: #dde8fc;
+}
+.button.contained.white {
+  color: #fafaf5;
+}
+.button.contained.black {
+  color: #1c1a10;
+}
+.button.outlined {
+  border-color: #023baa;
+}
+.button.outlined svg {
+  fill: #1f65ee;
+}
+.button.outlined:hover {
+  border-color: #ff9f00;
+}
+.button.outlined:hover svg {
+  fill: #1c1a10;
+}
+.button.small {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.button.large {
+  font-size: 24px;
+}/*# sourceMappingURL=Button.css.map */
